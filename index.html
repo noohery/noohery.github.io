@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sheikh Noohery - Personal Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/79c8ff31ef.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- home -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1>Noohery S.</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Data Science Enthusiast</p>
+                    <h1>Hello, I'm Noohery and I am passionate about turning raw data into meaningful insights.</h1>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="about-me">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="intro-p">
+                        Hi, I’m Noohery, an aspiring data scientist passionate about uncovering patterns, extracting
+                        insights, and solving real-world problems through data. With a strong foundation in statistics,
+                        programming, and machine learning, I thrive on exploring datasets and transforming raw numbers
+                        into meaningful stories. I’m continuously learning, building projects, and refining my skills to
+                        make an impact in the field.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br />Python, R, SQL, JavaScript</li>
+                            <li><span>Software Tools</span><br />ArcGIS, Tableau, Excel</li>
+                            <li><span>Analytical</span><br />Research, Data Analysis, Statistical Modeling</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>University of Massachusetts Amherst</span><br /><i>May 2024</i>: MS Geographic
+                                Information Science and Technology
+                            </li>
+                            <li>
+                                <span>University of Massachusetts Amherst</span><br /><i>February 2022</i>: BS
+                                Informatics
+                            </li>
+                            <li>
+                                <span>University of Massachusetts Amherst</span><br /><i>February 2022</i>: BA Human
+                                Geography
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2024</span><br />
+                                Personal Reading Tutor for a special needs student
+                            </li>
+                            <li>
+                                <span>2023 - 2024</span><br />
+                                Data Analysis Research Projects at University of Massachusetts Amherst
+                            </li>
+                            <li>
+                                <span>2019 - 2020</span><br />Data Entry Clerk at University of Massachusetts Amherst
+                            </li>
+                            <li>
+                                <span>2017 - 2019</span><br />Development Research Assistant at University of
+                                Massachusetts Amherst
+                            </li>
+                            <li><span>2015 - 2018</span><br />Data Research Assistant at Harvard University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------- Portfolio --------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <!---Photo by Yan Krukau ----->
+                        <img src="images/work1.jpg" alt="Image of elementary school aged children learning"/>
+                        <div class="layer">
+                            <h3>Housing and Quality Education</h3>
+                            <p>Assessed access to quality elementary education for Holyoke Public Housing residents.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <!------ Photo by Jakub Zerdzicki ------>
+                        <img src="images/work2.jpg" alt="Image of a generic graph on a tablet"/>
+                        <div class="layer">
+                            <h3>Economic Impact of Powwow</h3>
+                            <p>
+                                An analysis of the UMass Native People’s Powwow economic impact in Hampshire County, MA.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <!----- Photo by Gül Işık ------>
+                        <img src="images/work3.jpg" alt="Image of coffee and french toast topped with berries"/>
+                        <div class="layer">
+                            <h3>Food Access in Pioneer Valley</h3>
+                            <p>
+                                Developed a Food Access Index for the Pioneer Valley using 2010 USDA data, focusing on
+                                Hampden, Hampshire, and Franklin counties.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!------- contact --------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> noohery@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sheikhnoohery/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
